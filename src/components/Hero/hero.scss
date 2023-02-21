@@ -13,7 +13,8 @@
     //image
     &__image {
         margin-top: -103px;
-        width: 668px;
+        width: 100%;
+        max-width: 668px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -36,8 +37,8 @@
 
     //text
     &__text {
-        flex-shrink: 1;
-        max-width: 765px;
+        flex-shrink: 0.6;
+        width: 765px;
         padding: 0 0 0 135px;
 
         @media screen and (max-width: 1200px) {
@@ -45,6 +46,7 @@
         }
 
         @media screen and (max-width: 992px) {
+            width: 100%;
             max-width: 100%;
             padding: 0 135px 0 135px;
         }
