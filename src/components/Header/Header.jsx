@@ -16,7 +16,7 @@ const Header = () => {
                 <span></span>
                 <span></span>
             </button>
-            <div className="header__container">
+            <div className="header__container container">
                 <a href="#" className="header__logo">
                     <img src={logo} alt="GPT-3 logotype" />
                 </a>
@@ -24,7 +24,8 @@ const Header = () => {
                     onClick={() => setIsBurgerOpen(false)}
                     className={`header__nav${
                         isBurgerOpen ? ' header__nav_active' : ''
-                    }`}>
+                    }`}
+                >
                     <ul
                         className={`header__list${
                             isBurgerOpen ? ' header__list_active' : ''

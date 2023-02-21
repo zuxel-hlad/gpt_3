@@ -10,20 +10,22 @@ body {
 }
 
 .container {
-    max-width: 1194px;
-    padding: 0 12px;
-    margin: 0 auto;
+    padding-right: 135px;
+    padding-left: 135px;
 
-    @media screen and (max-width: 992px) {
-        max-width: 960px;
+    @media screen and (max-width: 768px) {
+        padding-left: 48px;
+        padding-right: 48px;
     }
 
     @media screen and (max-width: 768px) {
-        max-width: 720px;
+        padding-left: 45px;
+        padding-right: 45px;
     }
 
     @media screen and (max-width: 414px) {
-        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 

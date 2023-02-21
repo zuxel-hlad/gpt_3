@@ -63,20 +63,16 @@
 
     //container
     &__container {
-        padding: 55px 135px 0;
+        padding-top: 55px;
         display: flex;
         align-items: center;
 
-        @media screen and (max-width: 768px) {
-            padding: 55px 100px 0 48px;
-        }
-
-        @media screen and (max-width: 768px) {
-            padding: 27px 100px 0 45px;
+        @media screen and (max-width: 576px) {
+            padding-top: 27px;
         }
 
         @media screen and (max-width: 414px) {
-            padding: 27px 100px 0 15px;
+            padding-top: 27px;
         }
     }
 
@@ -262,6 +258,14 @@
 
         @media screen and (max-width: 992px) {
             margin-right: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-right: 50px;
+        }
+
+        @media screen and (max-width: 414px) {
+            margin-right: 70px;
         }
     }
 
