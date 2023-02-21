@@ -1,0 +1,272 @@
+@import '../../assets/sass/variables.scss';
+.header {
+    //burger
+    &__burger {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        display: none;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 10px;
+        width: 57px;
+        height: 57px;
+        background-color: transparent;
+        border: 3px solid $white-color;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        visibility: visible;
+        z-index: 1;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: $white-color;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        @media screen and (max-width: 992px) {
+            display: flex;
+        }
+
+        @media screen and (max-width: 768px) {
+        }
+
+        @media screen and (max-width: 414px) {
+            width: 49.5px;
+            height: 49.5px;
+            gap: 8px;
+            padding: 0 5px;
+        }
+
+        &_active {
+            opacity: 0;
+            visibility: hidden;
+
+            span {
+                &:nth-child(1) {
+                    transform: translateX(120%);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: translateX(-120%);
+                }
+            }
+        }
+    }
+
+    //container
+    &__container {
+        padding: 55px 135px 0;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            padding: 55px 100px 0 48px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 27px 100px 0 15px;
+        }
+    }
+
+    //logo
+    &__logo {
+        display: block;
+        width: 65px;
+        height: 16px;
+        cursor: pointer;
+        margin-right: 68px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin-right: 0;
+        }
+    }
+
+    //text
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: $white-color;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    //nav
+    &__nav {
+        flex-grow: 1;
+        max-width: 566px;
+        transition: right 0.3s ease;
+        margin-right: 10px;
+
+        @media screen and (max-width: 992px) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            min-height: 100vh;
+            flex-grow: unset;
+            width: 100%;
+            max-width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        &_active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    //list
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        &-close {
+            position: absolute;
+            display: none;
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border: none;
+            right: 15px;
+            top: 15px;
+            border: 3px solid $white-color;
+            border-radius: 5px;
+            z-index: 1;
+
+            span {
+                display: block;
+                border-radius: 5px;
+                height: 3px;
+                background-color: $white-color;
+
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(0px, 0px);
+                }
+                &:nth-child(2) {
+                    transform: rotate(-45deg) translate(1.5px, -2px);
+                }
+            }
+
+            @media screen and (max-width: 414px) {
+                padding: 3px;
+            }
+        }
+
+        &-link {
+            @extend .header__text;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            padding: 16px 0;
+            transition: opacity 0.3s ease;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+
+            &:active {
+                opacity: 0.4;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            padding: 40px;
+            max-width: 50%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: auto;
+            background-color: $menu-color;
+            min-height: 100vh;
+            transition: transform 0.3s ease;
+            transform: translate(120%);
+            position: relative;
+
+            &-close {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            max-width: 100%;
+        }
+
+        &_active {
+            transform: translateX(0);
+        }
+    }
+
+    //login
+    &__login {
+        margin-left: auto;
+
+        &-btn {
+            @extend .header__text;
+            background-color: transparent;
+            padding: 16px 43px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+            cursor: pointer;
+
+            @media (any-hover: hover) {
+                &:hover:not(.header__login-btn_logged) {
+                    opacity: 0.5;
+                }
+            }
+
+            &:active:not(.header__login-btn_logged) {
+                opacity: 0.4;
+            }
+
+            &_logged {
+                background-color: $orange-color;
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        background-color: #e33008;
+                    }
+                }
+
+                &:active {
+                    background-color: #ff5934;
+                }
+            }
+
+            @media screen and (max-width: 414px) {
+                font-size: 16px;
+                padding: 12px 30px;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        position: fixed;
+        width: 100%;
+        background-color: $main-bg-color;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
