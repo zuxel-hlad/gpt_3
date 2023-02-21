@@ -1,21 +1,14 @@
 @import '../../assets/sass/variables.scss';
 .hero {
     //general
-    padding-top: 103px;
+    padding: 103px 0 43px 0;
     min-height: calc(100vh - 112px);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
     z-index: 1;
-
-    @media screen and (max-width: 992px) {
-        min-height: 100vh;
-        padding-top: 150px;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: unset;
-    }
+    margin-bottom: 78px;
 
     //image
     &__image {
@@ -168,7 +161,7 @@
             }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 992px) {
             max-width: 100%;
         }
     }
@@ -208,5 +201,13 @@
         @media screen and (max-width: 576px) {
             flex-direction: column;
         }
+    }
+
+    @media screen and (max-width: 992px) {
+        min-height: 100vh;
+        padding-top: 150px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: unset;
     }
 }

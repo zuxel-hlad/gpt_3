@@ -1,5 +1,6 @@
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
+import Brands from '../Brands/Brands';
 import './app.scss';
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
             <Header />
             <main className="main">
                 <Hero />
+                <Brands />
             </main>
         </div>
     );
