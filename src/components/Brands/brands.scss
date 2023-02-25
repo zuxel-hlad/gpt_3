@@ -1,9 +1,10 @@
 .brands {
+    margin-bottom: 126px;
+
     &__container {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-bottom: 126px;
         gap: 46px;
 
         @media screen and (max-width: 992px) {

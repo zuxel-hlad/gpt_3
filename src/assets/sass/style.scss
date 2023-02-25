@@ -7,6 +7,7 @@ body {
     font-style: normal;
     color: #000000;
     background-color: $main-bg-color;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -34,7 +35,6 @@ body {
     font-size: 62px;
     line-height: 121%;
     letter-spacing: -0.04em;
-
     background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -60,5 +60,9 @@ body {
     &_sm {
         font-size: 34px;
         line-height: 132%;
+
+        @media screen and (max-width: 414px) {
+            font-size: 28px;
+        }
     }
 }
