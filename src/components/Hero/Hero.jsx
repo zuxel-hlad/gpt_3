@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <section className="hero">
             <div className="hero__text">
-                <h1 className="title hero__title">
+                <h1 className="title title_gradient hero__title">
                     Let’s Build Something amazing with GPT-3 OpenAI
                 </h1>
                 <p className="hero__descr">
