@@ -3,6 +3,7 @@ import Hero from '../Hero/Hero';
 import Brands from '../Brands/Brands';
 import About from '../About/About';
 import Advantages from '../advantages/Advantages';
+import Features from '../features/Features';
 import './app.scss';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
                 <Brands />
                 <About />
                 <Advantages />
+                <Features />
             </main>
         </div>
     );

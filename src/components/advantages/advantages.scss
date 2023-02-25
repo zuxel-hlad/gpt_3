@@ -34,24 +34,7 @@
     }
 
     &__link {
-        display: inline-block;
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 188%;
-        color: $orange-text;
-        transition: opacity 0.3s ease;
-
-        @media (any-hover: hover) {
-            &:hover {
-                opacity: 0.5;
-            }
-        }
-
-        &:active {
-            opacity: 0.7;
-        }
+        white-space: unset !important;
     }
 
     &__text {

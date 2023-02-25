@@ -9,7 +9,7 @@ const Advantages = () => {
                         The Future is Now and You Just Need To Realize It. Step
                         into Future Today & Make it Happen.
                     </h2>
-                    <a href="#" className="advantages__link">
+                    <a href="#" className="main-link advantages__link">
                         Request Early Access to Get Started
                     </a>
                 </div>

@@ -20,7 +20,7 @@ const About = () => {
                         <h3 className="about__main-title title title_sm title_gradient">
                             The possibilities are beyond your imagination
                         </h3>
-                        <a href="#" className="about__main-link">
+                        <a href="#" className="main-link">
                             Explore The Library
                         </a>
                     </div>
@@ -48,33 +48,6 @@ const About = () => {
                                 impossible own apartments b
                             </p>
                         </div>
-                        <div className="about__footer-column">
-                            <h2 className="bordered-title">Chatbots</h2>
-                            <p className="about__descr">
-                                We so opinion friends me message as delight.
-                                Whole front do of plate heard oh ought.
-                            </p>
-                        </div>
-                        {/* <div className="about__footer-column">
-                            <h2 className="about__title about__footer-title">
-                                Knowledgebase
-                            </h2>
-                            <p className="about__descr about__footer-descr">
-                                At jointure ladyship an insisted so humanity he.
-                                Friendly bachelor entrance to on by. As put
-                                impossible own apartments b
-                            </p>
-                        </div> */}
-                        {/* <div className="about__footer-column">
-                            <h2 className="about__title about__footer-title">
-                                Education
-                            </h2>
-                            <p className="about__descr about__footer-descr">
-                                At jointure ladyship an insisted so humanity he.
-                                Friendly bachelor entrance to on by. As put
-                                impossible own apartments b
-                            </p>
-                        </div> */}
                     </div>
                 </div>
             </div>
