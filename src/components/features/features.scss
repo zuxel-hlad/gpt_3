@@ -71,4 +71,8 @@
         margin-bottom: 31px;
         color: $text-color;
     }
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 63px;
+    }
 }

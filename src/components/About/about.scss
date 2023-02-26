@@ -1,6 +1,6 @@
 @import '../../assets//sass/variables.scss';
 .about {
-    margin-bottom: 201px;
+    margin-bottom: 126px;
 
     &__wrapper {
         padding: 57px;
@@ -74,7 +74,7 @@
 
     &__footer {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: initial;
         flex-wrap: wrap;
         gap: 30px;
@@ -95,5 +95,9 @@
         @media screen and (max-width: 992px) {
             gap: 20px;
         }
+    }
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 63px;
     }
 }
