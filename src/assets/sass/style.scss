@@ -3,8 +3,6 @@
 @import url('./font.scss');
 @import './variables.scss';
 
-
-
 [data-aos='text-anim'] {
     transition: transform $time-text $timing-function,
         opacity $time-text $timing-function;
@@ -16,6 +14,15 @@
     &.aos-animate {
         opacity: 1;
         transform: unset;
+    }
+}
+
+@keyframes run-words {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-120%);
     }
 }
 
@@ -42,7 +49,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1630px;
     padding: 0 15px;
     margin: 0 auto;
 }

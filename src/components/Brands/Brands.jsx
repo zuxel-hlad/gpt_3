@@ -14,8 +14,10 @@ const Brands = () => {
         )
     );
     return (
-        <section className="brands section" data-aos="fade-up">
-            <div className="container brands__container">{brands}</div>
+        <section className="brands section">
+            <div className="container brands__wrapper">
+                <div className="brands__container">{brands}</div>
+            </div>
         </section>
     );
 };

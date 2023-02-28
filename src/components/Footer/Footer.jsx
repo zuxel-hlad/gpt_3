@@ -50,13 +50,11 @@ const Footer = () => {
                 >
                     Do you want to step in to the future before others
                 </h3>
-                <a
-                    href=""
-                    className="main-link footer__link"
-                    data-aos="fade-up"
-                >
-                    Request Early Access
-                </a>
+                <div data-aos="fade-up">
+                    <a href="#" className="main-link footer__link">
+                        Request Early Access
+                    </a>
+                </div>
                 <div className="footer__info">
                     <div className="footer__company" data-aos="fade-up">
                         <a href="#" className="footer__logo" data-aos="fade-up">
