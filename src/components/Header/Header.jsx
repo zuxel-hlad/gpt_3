@@ -4,13 +4,20 @@ import logo from '../../assets/icons/gpt_3_logo.svg';
 const Header = () => {
     const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
+    const onBurgerToggle = arg => {
+        if (window.innerWidth > 992) {
+            return;
+        } else {
+            setIsBurgerOpen(arg);
+        }
+    };
     return (
         <header className="header">
             <button
                 className={`header__burger${
                     isBurgerOpen ? ' header__burger_active' : ''
                 }`}
-                onClick={() => setIsBurgerOpen(true)}
+                onClick={() => onBurgerToggle(true)}
             >
                 <span></span>
                 <span></span>
@@ -22,7 +29,7 @@ const Header = () => {
                         <img src={logo} alt="GPT-3 logotype" />
                     </a>
                     <nav
-                        onClick={() => setIsBurgerOpen(false)}
+                        onClick={() => onBurgerToggle(false)}
                         className={`header__nav${
                             isBurgerOpen ? ' header__nav_active' : ''
                         }`}
@@ -35,7 +42,7 @@ const Header = () => {
                         >
                             <button
                                 className="header__list-close"
-                                onClick={() => setIsBurgerOpen(false)}
+                                onClick={() => onBurgerToggle(false)}
                             >
                                 <span></span>
                                 <span></span>

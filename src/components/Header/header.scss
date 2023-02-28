@@ -4,7 +4,8 @@
     &__burger {
         position: absolute;
         right: 20px;
-        bottom: 0;
+        top: 50%;
+        transform: translateY(-50%);
         display: none;
         flex-wrap: wrap;
         align-content: center;
@@ -69,12 +70,14 @@
         display: flex;
         align-items: center;
 
-        @media screen and (max-width: 576px) {
-            padding-top: 27px;
+        @media screen and (max-width: 992px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
-        @media screen and (max-width: 414px) {
-            padding-top: 27px;
+        @media screen and (max-width: 576px) {
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
     }
 
@@ -117,7 +120,7 @@
             top: 0;
             right: 0;
             background-color: rgba(255, 255, 255, 0.5);
-            min-height: 100vh;
+            height: calc(100 * var(--vh-menu));
             flex-grow: unset;
             width: 100%;
             max-width: 100%;
@@ -197,7 +200,6 @@
             justify-content: flex-start;
             margin-left: auto;
             background-color: $menu-color;
-            min-height: 100vh;
             transition: transform 0.3s ease;
             transform: translate(120%);
             position: relative;
@@ -205,6 +207,11 @@
             &-close {
                 display: block;
             }
+        }
+
+        @media screen and (max-width: 992px) {
+            height: calc(100 * var(--vh-menu));
+            overflow-y: auto;
         }
 
         @media screen and (max-width: 414px) {

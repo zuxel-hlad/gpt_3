@@ -1,5 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import './plugins/height';
 import './assets/sass/style.scss';
 import App from './components/App/App';
 
