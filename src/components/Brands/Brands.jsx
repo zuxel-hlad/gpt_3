@@ -14,7 +14,7 @@ const Brands = () => {
         )
     );
     return (
-        <section className="brands section">
+        <section className="brands section" data-aos="fade-up">
             <div className="container brands__container">{brands}</div>
         </section>
     );

@@ -5,16 +5,23 @@ const Advantages = () => {
         <section className="advantages section">
             <div className="container advantages-container">
                 <div className="advantages__column">
-                    <h2 className="advantages__title title title_sm title_gradient">
+                    <h2
+                        className="advantages__title title title_sm title_gradient"
+                        data-aos="fade-up"
+                    >
                         The Future is Now and You Just Need To Realize It. Step
                         into Future Today & Make it Happen.
                     </h2>
-                    <a href="#" className="main-link advantages__link">
+                    <a
+                        href="#"
+                        className="main-link advantages__link"
+                        data-aos="fade-up"
+                    >
                         Request Early Access to Get Started
                     </a>
                 </div>
                 <div className="advantages__column advantages__text">
-                    <div className="advantages__text-item">
+                    <div className="advantages__text-item" data-aos="fade-up">
                         <h3 className="advantages__text-title bordered-title bordered-title_sm">
                             Improving end distrusts instantly
                         </h3>
@@ -24,7 +31,7 @@ const Advantages = () => {
                             was household applauded.
                         </p>
                     </div>
-                    <div className="advantages__text-item">
+                    <div className="advantages__text-item" data-aos="fade-up">
                         <h3 className="advantages__text-title bordered-title bordered-title_sm">
                             Become the tended active
                         </h3>
@@ -34,7 +41,7 @@ const Advantages = () => {
                             tended active enable to.
                         </p>
                     </div>
-                    <div className="advantages__text-item">
+                    <div className="advantages__text-item" data-aos="fade-up">
                         <h3 className="advantages__text-title bordered-title bordered-title_sm">
                             Message or am nothing
                         </h3>
@@ -44,7 +51,7 @@ const Advantages = () => {
                             chiefly address.
                         </p>
                     </div>
-                    <div className="advantages__text-item">
+                    <div className="advantages__text-item" data-aos="fade-up">
                         <h3 className="advantages__text-title bordered-title bordered-title_sm">
                             Really boy law county
                         </h3>

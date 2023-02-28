@@ -2,7 +2,7 @@ import './cta.scss';
 
 const Cta = () => {
     return (
-        <section className="cta section">
+        <section className="cta section" data-aos="fade-up">
             <div className="container">
                 <div className="cta__banner">
                     <div className="cta__banner-text">

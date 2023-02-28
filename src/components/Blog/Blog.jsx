@@ -21,6 +21,7 @@ const Blog = () => {
                     idx === 0 ? ' blog-list__card_first' : ''
                 }`}
                 key={idx}
+                data-aos="fade-up"
             >
                 <div className="blog-list__card-image">
                     <img
@@ -47,7 +48,10 @@ const Blog = () => {
     return (
         <section className="blog section">
             <div className="container">
-                <h2 className="blog__title title title_gradient">
+                <h2
+                    className="blog__title title title_gradient"
+                    data-aos="fade-up"
+                >
                     A lot is happening,
                     <br /> We are blogging about it.
                 </h2>

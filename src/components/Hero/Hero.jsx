@@ -4,7 +4,11 @@ import './hero.scss';
 
 const Hero = () => {
     return (
-        <section className="hero section">
+        <section
+            className="hero section"
+            data-aos="fade-in"
+            data-aos-duration="2000"
+        >
             <div className="container hero__wrapper">
                 <div className="hero__text">
                     <h1 className="title title_gradient hero__title">

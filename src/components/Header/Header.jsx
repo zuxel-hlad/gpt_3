@@ -12,7 +12,7 @@ const Header = () => {
         }
     };
     return (
-        <header className="header">
+        <header className="header" data-aos="fade-down">
             <button
                 className={`header__burger${
                     isBurgerOpen ? ' header__burger_active' : ''

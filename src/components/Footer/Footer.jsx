@@ -24,7 +24,7 @@ const Footer = () => {
         //list items
         const listItems = links.map((link, ind) => {
             return (
-                <li className="footer__list-item" key={ind}>
+                <li className="footer__list-item" key={ind} data-aos="fade-up">
                     <a href="#" className="footer__list-link main-link">
                         {link}
                     </a>
@@ -34,7 +34,9 @@ const Footer = () => {
         //list
         return (
             <ul className="footer__list" key={idx}>
-                <h3 className="footer__list-title">{title}</h3>
+                <h3 className="footer__list-title" data-aos="fade-up">
+                    {title}
+                </h3>
                 {listItems}
             </ul>
         );
@@ -42,15 +44,22 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container">
-                <h3 className="footer__title title title_gradient">
+                <h3
+                    className="footer__title title title_gradient"
+                    data-aos="fade-up"
+                >
                     Do you want to step in to the future before others
                 </h3>
-                <a href="" className="main-link footer__link">
+                <a
+                    href=""
+                    className="main-link footer__link"
+                    data-aos="fade-up"
+                >
                     Request Early Access
                 </a>
                 <div className="footer__info">
-                    <div className="footer__company">
-                        <a href="#" className="footer__logo">
+                    <div className="footer__company" data-aos="fade-up">
+                        <a href="#" className="footer__logo" data-aos="fade-up">
                             <img src={logo} alt="GPT-3" />
                         </a>
                         <span className="footer__copyright footer__company-text">

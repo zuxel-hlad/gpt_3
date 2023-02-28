@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import Brands from '../Brands/Brands';
@@ -10,6 +13,14 @@ import Footer from '../Footer/Footer';
 import './app.scss';
 
 const App = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 700,
+            easing: 'ease',
+            once: false,
+        });
+        AOS.refresh();
+    }, []);
     return (
         <div className="app">
             <Header />
