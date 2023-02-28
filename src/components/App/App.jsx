@@ -6,6 +6,7 @@ import Advantages from '../advantages/Advantages';
 import Features from '../features/Features';
 import Cta from '../Cta/Cta';
 import Blog from '../Blog/Blog';
+import Footer from '../Footer/Footer';
 import './app.scss';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
                 <Features />
                 <Cta />
                 <Blog />
+                <Footer />
             </main>
         </div>
     );
