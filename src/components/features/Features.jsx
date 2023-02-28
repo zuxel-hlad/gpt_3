@@ -3,7 +3,7 @@ import featuresImage from '../../assets/img/features/features_image.png';
 
 const Features = () => {
     return (
-        <section className="features">
+        <section className="features section">
             <div className="container features-container">
                 <div className="features__column features__view">
                     <div className="features__image">

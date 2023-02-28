@@ -4,7 +4,7 @@ import './hero.scss';
 
 const Hero = () => {
     return (
-        <section className="hero">
+        <section className="hero section">
             <div className="container hero__wrapper">
                 <div className="hero__text">
                     <h1 className="title title_gradient hero__title">

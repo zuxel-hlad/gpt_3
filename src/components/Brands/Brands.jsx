@@ -14,7 +14,7 @@ const Brands = () => {
         )
     );
     return (
-        <section className="brands">
+        <section className="brands section">
             <div className="container brands__container">{brands}</div>
         </section>
     );

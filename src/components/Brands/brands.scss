@@ -1,5 +1,4 @@
 .brands {
-    margin-bottom: 126px;
 
     &__container {
         display: flex;
@@ -34,9 +33,5 @@
         @media screen and (max-width: 576px) {
             max-width: 100px;
         }
-    }
-
-    @media screen and (max-width: 768px) {
-        margin-bottom: 63px;
     }
 }

@@ -3,7 +3,6 @@
     //general
     padding: 103px 0 0 0;
     min-height: calc(100vh - 112px);
-    margin-bottom: 126px;
 
     &__wrapper {
         display: flex;
@@ -205,9 +204,5 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: unset;
-    }
-
-    @media screen and (max-width: 992px) {
-        margin-bottom: 63px;
     }
 }

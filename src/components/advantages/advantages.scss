@@ -34,7 +34,7 @@
     }
 
     &__link {
-        white-space: unset !important;
+        white-space: unset;
     }
 
     &__text {
@@ -69,7 +69,7 @@
 
         &-title {
             flex: 1 1 auto;
-            white-space: pre-wrap !important;
+            white-space: pre-wrap;
             width: 40%;
             max-width: 174px;
         }
@@ -93,9 +93,5 @@
             flex-wrap: wrap;
             gap: 25px;
         }
-    }
-
-    @media screen and (max-width: 992px) {
-        margin-bottom: 63px;
     }
 }

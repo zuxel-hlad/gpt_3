@@ -2,7 +2,7 @@ import './advantages.scss';
 
 const Advantages = () => {
     return (
-        <section className="advantages">
+        <section className="advantages section">
             <div className="container advantages-container">
                 <div className="advantages__column">
                     <h2 className="advantages__title title title_sm title_gradient">

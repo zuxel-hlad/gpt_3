@@ -1,7 +1,6 @@
 @import '../../assets/sass/variables.scss';
 .features {
-    margin-bottom: 154px;
-
+    
     &-container {
         display: flex;
         align-items: flex-end;
@@ -44,7 +43,7 @@
     }
 
     &__link {
-        color: #71e5ff !important;
+        color: #71e5ff;
     }
 
     &__image {
@@ -70,9 +69,5 @@
         line-height: 188%;
         margin-bottom: 31px;
         color: $text-color;
-    }
-
-    @media screen and (max-width: 992px) {
-        margin-bottom: 63px;
     }
 }

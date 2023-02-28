@@ -1,7 +1,6 @@
 @import '../../assets//sass/variables.scss';
 .about {
-    margin-bottom: 126px;
-
+    
     &__wrapper {
         padding: 57px;
         background: #042c54;
@@ -95,9 +94,5 @@
         @media screen and (max-width: 992px) {
             gap: 20px;
         }
-    }
-
-    @media screen and (max-width: 992px) {
-        margin-bottom: 63px;
     }
 }
