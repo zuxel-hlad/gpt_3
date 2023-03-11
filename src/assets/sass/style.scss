@@ -48,8 +48,14 @@ body {
     }
 }
 
+.main {
+    @media screen and (max-width: 992px) {
+        overflow: hidden;
+    }
+}
+
 .container {
-    max-width: 1630px;
+    max-width: 1410px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -131,6 +137,7 @@ body {
 
 .main-link {
     display: inline-block;
+    width: max-content;
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;

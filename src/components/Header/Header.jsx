@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import './header.scss';
 import logo from '../../assets/icons/gpt_3_logo.svg';
+import RegisterModal from '../RegisterModal/RegisterModal';
 const Header = () => {
     const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+    const [isOpenModal, setIsOpenModal] = useState(false);
+
+    const isLogged = false;
 
     const onBurgerToggle = arg => {
         if (window.innerWidth > 992) {
@@ -11,8 +15,25 @@ const Header = () => {
             setIsBurgerOpen(arg);
         }
     };
+
+    const scrollTo = elId => {
+        if (!elId) {
+            return;
+        } else {
+            document.getElementById(elId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+            });
+        }
+    };
+
     return (
         <header className="header" data-aos="fade-down">
+            <RegisterModal
+                show={isOpenModal}
+                handleClose={() => setIsOpenModal(false)}
+                isRegistered={isLogged}
+            />
             <button
                 className={`header__burger${
                     isBurgerOpen ? ' header__burger_active' : ''
@@ -48,41 +69,61 @@ const Header = () => {
                                 <span></span>
                             </button>
                             <li className="header__list-item">
-                                <a href="#" className="header__list-link">
+                                <button
+                                    type="button"
+                                    className="header__list-btn"
+                                    onClick={() => scrollTo('home')}
+                                >
                                     Home
-                                </a>
+                                </button>
                             </li>
                             <li className="header__list-item">
-                                <a href="#" className="header__list-link">
+                                <button
+                                    className="header__list-btn"
+                                    onClick={() => scrollTo('about')}
+                                >
                                     What is GPT?
-                                </a>
+                                </button>
                             </li>
                             <li className="header__list-item">
-                                <a href="#" className="header__list-link">
+                                <button
+                                    type="button"
+                                    className="header__list-btn"
+                                    onClick={() => scrollTo('blog')}
+                                >
                                     Open AI
-                                </a>
+                                </button>
                             </li>
                             <li className="header__list-item">
-                                <a href="#" className="header__list-link">
+                                <button
+                                    type="button"
+                                    className="header__list-btn"
+                                    onClick={() => scrollTo('features')}
+                                >
                                     Case Studies
-                                </a>
+                                </button>
                             </li>
                             <li className="header__list-item">
-                                <a href="#" className="header__list-link">
+                                <button
+                                    type="button"
+                                    className="header__list-btn"
+                                    onClick={() => scrollTo('advantages')}
+                                >
                                     Library
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </nav>
                     <div className="header__login">
-                        {/* <button type="button" className="header__login-btn">
-                        Sign in
-                    </button> */}
+                        <button type="button" className="header__login-btn">
+                            Sign in
+                        </button>
                         <button
                             type="button"
                             className="header__login-btn header__login-btn_logged"
+                            onClick={() => setIsOpenModal(true)}
                         >
-                            Sign in
+                            Sign up
                         </button>
                     </div>
                 </div>

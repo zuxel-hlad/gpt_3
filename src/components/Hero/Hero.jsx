@@ -8,6 +8,7 @@ const Hero = () => {
             className="hero section"
             data-aos="fade-in"
             data-aos-duration="2000"
+            id="home"
         >
             <div className="container hero__wrapper">
                 <div className="hero__text">

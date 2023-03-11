@@ -1,6 +1,13 @@
 @import '../../assets/sass/variables.scss';
 .header {
     //burger
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    z-index: 3;
+
     &__burger {
         position: absolute;
         right: 20px;
@@ -26,6 +33,10 @@
             height: 3px;
             background-color: $white-color;
             transition: transform 0.3s ease, opacity 0.3s ease;
+
+            @media screen and (max-width: 414px) {
+                height: 2px;
+            }
         }
 
         @media screen and (max-width: 992px) {
@@ -38,10 +49,11 @@
         }
 
         @media screen and (max-width: 414px) {
-            width: 49.5px;
-            height: 49.5px;
+            width: 40px;
+            height: 40px;
             gap: 8px;
             padding: 0 5px;
+            border: 2px solid $white-color;
         }
 
         &_active {
@@ -173,10 +185,10 @@
             }
         }
 
-        &-link {
+        &-btn {
             @extend .header__text;
-            text-decoration: none;
-            display: inline-block;
+            border: none;
+            background: transparent;
             cursor: pointer;
             padding: 16px 0;
             transition: opacity 0.3s ease;
@@ -264,23 +276,22 @@
                 font-size: 16px;
                 padding: 12px 30px;
             }
+
+            @media screen and (max-width: 414px) {
+                padding: 7.5px;
+            }
         }
 
         @media screen and (max-width: 992px) {
             margin-right: 100px;
         }
 
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 576px) {
             margin-right: 70px;
         }
-    }
 
-    @media screen and (max-width: 992px) {
-        position: fixed;
-        width: 100%;
-        background-color: $main-bg-color;
-        top: 0;
-        left: 0;
-        z-index: 2;
+        @media screen and (max-width: 414px) {
+            margin-right: 60px;
+        }
     }
 }

@@ -1,8 +1,39 @@
 @import '../../assets/sass/variables.scss';
 .hero {
     //general
-    padding: 103px 0 0 0;
+    padding: 215px 0 0 0;
     min-height: calc(100vh - 112px);
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -305px;
+        left: -336px;
+        width: 1013px;
+        height: 1013px;
+        background: linear-gradient(
+                to bottom,
+                rgba(0, 40, 83, 0.5),
+                rgba(0, 40, 83, 1)
+            ),
+            #002853;
+        filter: blur(282px);
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 500px;
+        right: 0;
+        width: 363px;
+        height: 496px;
+        background: linear-gradient(to bottom, #072d56, #000000);
+        filter: blur(282px);
+        z-index: -1;
+    }
 
     &__wrapper {
         display: flex;

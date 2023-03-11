@@ -1,9 +1,7 @@
 .brands {
-    &__wrapper {
-        overflow: hidden;
-    }
+    overflow: hidden;
 
-    &__container {
+    &__wrapper {
         display: flex;
         justify-content: space-evenly;
         align-items: center;

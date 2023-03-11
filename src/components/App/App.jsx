@@ -10,6 +10,7 @@ import Features from '../features/Features';
 import Cta from '../Cta/Cta';
 import Blog from '../Blog/Blog';
 import Footer from '../Footer/Footer';
+import ButtonUP from '../ButtonUP/ButtonUP';
 import './app.scss';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
                 <Cta />
                 <Blog />
                 <Footer />
+                <ButtonUP />
             </main>
         </div>
     );
